@@ -1,0 +1,98 @@
+[
+{
+  "directory": "/home/lth/learn/Muduo/build",
+  "command": "/usr/bin/g++ -DMyMuduo_EXPORTS   -g -std=c++11 -fPIC -lpthread -g -fPIC -o CMakeFiles/MyMuduo.dir/Accept.o -c /home/lth/learn/Muduo/Accept.cpp",
+  "file": "/home/lth/learn/Muduo/Accept.cpp",
+  "output": "CMakeFiles/MyMuduo.dir/Accept.o"
+},
+{
+  "directory": "/home/lth/learn/Muduo/build",
+  "command": "/usr/bin/g++ -DMyMuduo_EXPORTS   -g -std=c++11 -fPIC -lpthread -g -fPIC -o CMakeFiles/MyMuduo.dir/Buffer.o -c /home/lth/learn/Muduo/Buffer.cpp",
+  "file": "/home/lth/learn/Muduo/Buffer.cpp",
+  "output": "CMakeFiles/MyMuduo.dir/Buffer.o"
+},
+{
+  "directory": "/home/lth/learn/Muduo/build",
+  "command": "/usr/bin/g++ -DMyMuduo_EXPORTS   -g -std=c++11 -fPIC -lpthread -g -fPIC -o CMakeFiles/MyMuduo.dir/Channel.o -c /home/lth/learn/Muduo/Channel.cpp",
+  "file": "/home/lth/learn/Muduo/Channel.cpp",
+  "output": "CMakeFiles/MyMuduo.dir/Channel.o"
+},
+{
+  "directory": "/home/lth/learn/Muduo/build",
+  "command": "/usr/bin/g++ -DMyMuduo_EXPORTS   -g -std=c++11 -fPIC -lpthread -g -fPIC -o CMakeFiles/MyMuduo.dir/CurrentThread.o -c /home/lth/learn/Muduo/CurrentThread.cpp",
+  "file": "/home/lth/learn/Muduo/CurrentThread.cpp",
+  "output": "CMakeFiles/MyMuduo.dir/CurrentThread.o"
+},
+{
+  "directory": "/home/lth/learn/Muduo/build",
+  "command": "/usr/bin/g++ -DMyMuduo_EXPORTS   -g -std=c++11 -fPIC -lpthread -g -fPIC -o CMakeFiles/MyMuduo.dir/DefaultPoller.o -c /home/lth/learn/Muduo/DefaultPoller.cpp",
+  "file": "/home/lth/learn/Muduo/DefaultPoller.cpp",
+  "output": "CMakeFiles/MyMuduo.dir/DefaultPoller.o"
+},
+{
+  "directory": "/home/lth/learn/Muduo/build",
+  "command": "/usr/bin/g++ -DMyMuduo_EXPORTS   -g -std=c++11 -fPIC -lpthread -g -fPIC -o CMakeFiles/MyMuduo.dir/EPollPoller.o -c /home/lth/learn/Muduo/EPollPoller.cpp",
+  "file": "/home/lth/learn/Muduo/EPollPoller.cpp",
+  "output": "CMakeFiles/MyMuduo.dir/EPollPoller.o"
+},
+{
+  "directory": "/home/lth/learn/Muduo/build",
+  "command": "/usr/bin/g++ -DMyMuduo_EXPORTS   -g -std=c++11 -fPIC -lpthread -g -fPIC -o CMakeFiles/MyMuduo.dir/EventLoop.o -c /home/lth/learn/Muduo/EventLoop.cpp",
+  "file": "/home/lth/learn/Muduo/EventLoop.cpp",
+  "output": "CMakeFiles/MyMuduo.dir/EventLoop.o"
+},
+{
+  "directory": "/home/lth/learn/Muduo/build",
+  "command": "/usr/bin/g++ -DMyMuduo_EXPORTS   -g -std=c++11 -fPIC -lpthread -g -fPIC -o CMakeFiles/MyMuduo.dir/EventLoopThread.o -c /home/lth/learn/Muduo/EventLoopThread.cpp",
+  "file": "/home/lth/learn/Muduo/EventLoopThread.cpp",
+  "output": "CMakeFiles/MyMuduo.dir/EventLoopThread.o"
+},
+{
+  "directory": "/home/lth/learn/Muduo/build",
+  "command": "/usr/bin/g++ -DMyMuduo_EXPORTS   -g -std=c++11 -fPIC -lpthread -g -fPIC -o CMakeFiles/MyMuduo.dir/EventLoopThreadPool.o -c /home/lth/learn/Muduo/EventLoopThreadPool.cpp",
+  "file": "/home/lth/learn/Muduo/EventLoopThreadPool.cpp",
+  "output": "CMakeFiles/MyMuduo.dir/EventLoopThreadPool.o"
+},
+{
+  "directory": "/home/lth/learn/Muduo/build",
+  "command": "/usr/bin/g++ -DMyMuduo_EXPORTS   -g -std=c++11 -fPIC -lpthread -g -fPIC -o CMakeFiles/MyMuduo.dir/InetAddress.o -c /home/lth/learn/Muduo/InetAddress.cpp",
+  "file": "/home/lth/learn/Muduo/InetAddress.cpp",
+  "output": "CMakeFiles/MyMuduo.dir/InetAddress.o"
+},
+{
+  "directory": "/home/lth/learn/Muduo/build",
+  "command": "/usr/bin/g++ -DMyMuduo_EXPORTS   -g -std=c++11 -fPIC -lpthread -g -fPIC -o CMakeFiles/MyMuduo.dir/Poller.o -c /home/lth/learn/Muduo/Poller.cpp",
+  "file": "/home/lth/learn/Muduo/Poller.cpp",
+  "output": "CMakeFiles/MyMuduo.dir/Poller.o"
+},
+{
+  "directory": "/home/lth/learn/Muduo/build",
+  "command": "/usr/bin/g++ -DMyMuduo_EXPORTS   -g -std=c++11 -fPIC -lpthread -g -fPIC -o CMakeFiles/MyMuduo.dir/Socket.o -c /home/lth/learn/Muduo/Socket.cpp",
+  "file": "/home/lth/learn/Muduo/Socket.cpp",
+  "output": "CMakeFiles/MyMuduo.dir/Socket.o"
+},
+{
+  "directory": "/home/lth/learn/Muduo/build",
+  "command": "/usr/bin/g++ -DMyMuduo_EXPORTS   -g -std=c++11 -fPIC -lpthread -g -fPIC -o CMakeFiles/MyMuduo.dir/TcpConnection.o -c /home/lth/learn/Muduo/TcpConnection.cpp",
+  "file": "/home/lth/learn/Muduo/TcpConnection.cpp",
+  "output": "CMakeFiles/MyMuduo.dir/TcpConnection.o"
+},
+{
+  "directory": "/home/lth/learn/Muduo/build",
+  "command": "/usr/bin/g++ -DMyMuduo_EXPORTS   -g -std=c++11 -fPIC -lpthread -g -fPIC -o CMakeFiles/MyMuduo.dir/TcpServer.o -c /home/lth/learn/Muduo/TcpServer.cpp",
+  "file": "/home/lth/learn/Muduo/TcpServer.cpp",
+  "output": "CMakeFiles/MyMuduo.dir/TcpServer.o"
+},
+{
+  "directory": "/home/lth/learn/Muduo/build",
+  "command": "/usr/bin/g++ -DMyMuduo_EXPORTS   -g -std=c++11 -fPIC -lpthread -g -fPIC -o CMakeFiles/MyMuduo.dir/Thread.o -c /home/lth/learn/Muduo/Thread.cpp",
+  "file": "/home/lth/learn/Muduo/Thread.cpp",
+  "output": "CMakeFiles/MyMuduo.dir/Thread.o"
+},
+{
+  "directory": "/home/lth/learn/Muduo/build",
+  "command": "/usr/bin/g++ -DMyMuduo_EXPORTS   -g -std=c++11 -fPIC -lpthread -g -fPIC -o CMakeFiles/MyMuduo.dir/Timestamp.o -c /home/lth/learn/Muduo/Timestamp.cpp",
+  "file": "/home/lth/learn/Muduo/Timestamp.cpp",
+  "output": "CMakeFiles/MyMuduo.dir/Timestamp.o"
+}
+]
