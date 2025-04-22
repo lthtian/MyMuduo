@@ -110,6 +110,30 @@ void TcpConnection::handleError()
     LOG_ERROR("TcpConnection::handleErrno name:%s - SO_ERROR:%d \n", _name.c_str(), err);
 }
 
+void TcpConnection::connectEstablished() // 连接建立
+{
+    setState(kConnected);
+    // 把自己的指针传给负责的channel, 让其知晓自己的存在状态
+    // 防止上层TcpConnection析构后下层channel依旧运行
+    // 根本原因是TcpConnection要给到用户手里, 不确定何时析构
+    _channel->tie(shared_from_this());
+    _channel->enableReading(); // 注册Channel读事件
+
+    // 新连接已经建立, 执行连接建立回调
+    _connectionCallback(shared_from_this());
+}
+
+void TcpConnection::connectDestoryed() // 连接销毁
+{
+    if (_state == kConnected)
+    {
+        setState(kDisconnected);
+        _channel->disableAll();
+        _connectionCallback(shared_from_this());
+    }
+    _channel->remove();
+}
+
 // 发送数据
 void TcpConnection::send(const std::string buf)
 {
@@ -176,30 +200,6 @@ void TcpConnection::sendInLoop(const void *data, size_t len)
             _channel->enableWriting(); // 注册channel的写事件, 否则poller不会给channel通知EPOLLOUT,
         }
     }
-}
-
-void TcpConnection::connectEstablished() // 连接建立
-{
-    setState(kConnected);
-    // 把自己的指针传给负责的channel, 让其知晓自己的存在状态
-    // 防止上层TcpConnection析构后下层channel依旧运行
-    // 根本原因是TcpConnection要给到用户手里, 不确定何时析构
-    _channel->tie(shared_from_this());
-    _channel->enableReading(); // 注册Channel读事件
-
-    // 新连接已经建立, 执行连接建立回调
-    _connectionCallback(shared_from_this());
-}
-
-void TcpConnection::connectDestoryed() // 连接销毁
-{
-    if (_state == kConnected)
-    {
-        setState(kDisconnected);
-        _channel->disableAll();
-        _connectionCallback(shared_from_this());
-    }
-    _channel->remove();
 }
 
 // 关闭Tcp连接

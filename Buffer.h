@@ -33,6 +33,7 @@ public:
     {
         _readerIndex = _writerIndex = kCheapPrepend; // 全读了, 复位
     }
+
     // Buffer -> string
     std::string retrieveAllAsString() { return retrieveAsString(readableBytes()); }
 
@@ -71,8 +72,8 @@ private:
 
     void makeSpace(size_t len)
     {
-        // 可读区 + 前面空闲出来的区域 < 要求的大小
-        if (writableBytes() + prependableBytes() < len + kCheapPrepend)
+        // 后面真正可写的 + 前面读出来空余的 < 要求的大小
+        if (writableBytes() + _readerIndex < len + kCheapPrepend)
             _buffer.resize(_writerIndex + len);
         else // 如果够, 把后面未读的移到前面, 给后面空出来
         {
